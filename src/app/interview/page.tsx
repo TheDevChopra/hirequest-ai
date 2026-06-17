@@ -8,6 +8,8 @@ export default function InterviewPractice() {
   const [mode, setMode] = useState<'voice' | 'text'>('text');
   const [input, setInput] = useState('');
   const [conversation, setConversation] = useState<{actor: 'interviewer'|'candidate', text: string}[]>([]);
+  const [loading, setLoading] = useState(false);
+  const [interviewState, setInterviewState] = useState('active');
 
   const startSession = (selectedMode: 'voice' | 'text') => {
     setMode(selectedMode);
