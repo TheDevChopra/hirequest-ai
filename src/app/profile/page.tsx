@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Briefcase, Award, TrendingUp, Github, Linkedin, ExternalLink } from 'lucide-react';
+import { MapPin, Briefcase, Award, TrendingUp, Link as LinkIcon, ExternalLink } from 'lucide-react';
 import { getUserProfile } from '@/actions/profile';
 
 export const dynamic = 'force-dynamic';
@@ -32,8 +32,8 @@ export default async function ComprehensiveProfile() {
         <div style={{ marginLeft: 'auto', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <button className="btn btn-primary" style={{ width: '100%' }}>Edit Profile</button>
           <div style={{ display: 'flex', gap: '0.5rem' }}>
-            <button className="btn" style={{ padding: '0.5rem' }}><Github size={18} /></button>
-            <button className="btn" style={{ padding: '0.5rem' }}><Linkedin size={18} /></button>
+            <button className="btn" style={{ padding: '0.5rem' }}><LinkIcon size={18} /></button>
+            <button className="btn" style={{ padding: '0.5rem' }}><LinkIcon size={18} /></button>
             <button className="btn" style={{ padding: '0.5rem' }}><ExternalLink size={18} /></button>
           </div>
         </div>
